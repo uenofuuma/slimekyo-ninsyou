@@ -48,12 +48,12 @@
         h2{font-size:40px;color:red;}
       </style>
       <script>
-        alert('このページのURLは　'+location.href+'である。');
-alert('このページの横幅は　'+screen.width+'　pxである。');
-alert('このページの縦幅は　'+screen.height+'　pxである。');
       fetch('https://ipinfo.io?callback')
   .then(res => res.json())
   .then(json => alert('ipアドレスは'+json.ip+'である。'))
+        alert('このページのURLは　'+location.href+'である。');
+alert('このページの横幅は　'+screen.width+'　pxである。');
+alert('このページの縦幅は　'+screen.height+'　pxである。');
         
         document.getElementById("kami").onclick = function() {
   document.getElementById("kami").innerHTML = "君は良きslime教徒だ";
